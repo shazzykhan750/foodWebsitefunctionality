@@ -14,7 +14,6 @@ const ResturantContainer = () => {
     );
     const json = await data.json();
 
-    // get the restaurants array safely
     const restArray =
       json?.data?.cards?.[1]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants || [];
